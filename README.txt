@@ -1,26 +1,22 @@
 = prowlsms
 
-* FIX (url)
+* http://github.com/rubiojr/prowlsms
 
 == DESCRIPTION:
 
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
-
-== SYNOPSIS:
-
-  FIX (code sample of usage)
+Sinatra application to send notifications via prowl (http://prowl.weks.net)
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+sinatra
+haml
+thin/mongrel
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+git clone git://github.com/rubiojr/prowlsms
+cd prowlsms
+rackup -s thin
 
 == LICENSE:
 
