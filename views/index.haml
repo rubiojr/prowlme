@@ -1,6 +1,6 @@
 %h1 
-  = "Prowl SMS messenger"
-%form{:method => 'post', :action => '/prowlsms/send', :class => 'form'}
+  = @apptitle
+%form{:method => 'post', :action => '/send', :class => 'form'}
   %div
     %label From:
     %br
@@ -13,5 +13,12 @@
     %label Text:
     %br
     %textarea{:name => 'text', :rows => 8, :cols => 40}
+  %div
+    %br
+    = captcha_image_tag
+    %br
+    Escribe el texto que aparece arriba
+    %br
+    = captcha_answer_tag
   %div
     %input{:type => 'submit', :value => 'Enviar'}
