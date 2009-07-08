@@ -15,6 +15,20 @@ module ProwlSMS
     @@config = YAML.load_file(config_file)
     @@config
   end
+
+  def self.i18n_config
+    return @@i18n_config if defined? @@i18n_config 
+    i18n_config = File.join(File.dirname(__FILE__), 'config/i18n')
+    @@i18n_config = YAML.load_file(i18n_config)
+    @@i18n_config
+  end
+end
+
+helpers do 
+  def i18n(msg)
+    lang = ProwlSMS::config['lang'] || 'en'
+    ProwlSMS::i18n_config[msg][lang] rescue msg
+  end
 end
 
 post '/send' do

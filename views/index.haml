@@ -1,5 +1,5 @@
 %h1 
-  = @apptitle
+  = i18n("Send me a message")
 %form{:method => 'post', :action => '/send', :class => 'form'}
   %div
     %label From:
@@ -17,7 +17,7 @@
     %br
     = captcha_image_tag
     %br
-    Escribe el texto que aparece arriba
+    = i18n("Type the text above")
     %br
     = captcha_answer_tag
   %div
