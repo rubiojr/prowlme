@@ -25,6 +25,6 @@ post '/send' do
 end
 
 get '/' do
-  @apptitle = ProwlSMS::config['apptitle'] || 'ProwlSMS by Sergio Rubio"
+  @apptitle = ProwlSMS::config['apptitle'] || 'ProwlSMS by Sergio Rubio'
   haml :index
 end
