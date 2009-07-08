@@ -1,11 +1,13 @@
 %h1 
-  = "Prowl SMS messenger by Sergio Rubio"
+  = "Prowl SMS messenger"
 %form{:method => 'post', :action => '/send', :class => 'form'}
   %div
     %label Subject:
-    %input{:type => 'text', :name => 'subject'}
     %br
+    %input{:type => 'text', :name => 'subject'}
+  %div
     %label Text:
-    %input{:type => 'text', :name => 'text'}
+    %br
+    %textarea{:name => 'text', :rows => 8, :cols => 40}
   %div
     %input{:type => 'submit', :value => 'Enviar'}

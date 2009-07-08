@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'prowl'
 require 'yaml'
+require 'haml'
 
 config_file = File.join(File.dirname(__FILE__), 'config')
 config = YAML.load_file(config_file)
