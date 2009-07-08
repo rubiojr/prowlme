@@ -1,0 +1,11 @@
+form {
+  margin: 10px;
+}
+
+form div {
+  margin-top: 15px;
+}
+label {
+  font-weight: bold;
+  padding-right: 200px;
+}
