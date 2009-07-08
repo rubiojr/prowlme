@@ -2,6 +2,10 @@
   = "Prowl SMS messenger"
 %form{:method => 'post', :action => '/prowlsms/send', :class => 'form'}
   %div
+    %label From:
+    %br
+    %input{:type => 'text', :name => 'from'}
+  %div
     %label Subject:
     %br
     %input{:type => 'text', :name => 'subject'}

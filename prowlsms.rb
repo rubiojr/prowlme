@@ -9,7 +9,7 @@ config = YAML.load_file(config_file)
 
 post '/send' do
   p = Prowler.new(config['username'], config['password'])
-  p.send_notification('ProwlSMS',params['subject'] || 'no subject', params['text'] || 'no text')
+  p.send_notification(params['from'] || 'unknown',params['subject'] || 'no subject', params['text'] || 'no text')
   haml :sent
 end
 
