@@ -1,24 +1,25 @@
-%h1 
-  = i18n("Send me a message")
-%form{:method => 'post', :action => '/send', :class => 'form'}
-  %div
-    %label= i18n('From')
-    %br
-    %input{:type => 'text', :name => 'from'}
-  %div
-    %label= i18n('Subject')
-    %br
-    %input{:type => 'text', :name => 'subject'}
-  %div
-    %label= i18n('Text')
-    %br
-    %textarea{:name => 'text', :rows => 8, :cols => 40}
-  %div
-    %br
-    = captcha_image_tag
-    %br
-    = i18n("Type the text above")
-    %br
-    = captcha_answer_tag
-  %div
-    %input{:type => 'submit', :value => 'Enviar'}
+%div.content
+  %h1 
+    = i18n("Send me a message")
+  %form{:method => 'post', :action => '/send', :class => 'form'}
+    %div
+      %label= i18n('From')
+      %br
+      %input{:type => 'text', :name => 'from'}
+    %div
+      %label= i18n('Subject')
+      %br
+      %input{:type => 'text', :name => 'subject'}
+    %div
+      %label= i18n('Text')
+      %br
+      %textarea{:name => 'text', :rows => 8, :cols => 40}
+    %div
+      %br
+      = captcha_image_tag
+      %br
+      = i18n("Type the text above")
+      %br
+      = captcha_answer_tag
+    %div
+      %input{:type => 'submit', :value => 'Enviar'}

@@ -1,11 +1,21 @@
+.content {
+  background-color: #FFF069;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-color: black;
+  padding: 10px;
+}
 form {
-  margin: 10px;
 }
 
 form div {
   margin-top: 20px;
 }
+
 label {
   font-weight: bold;
   padding-right: 200px;
+}
+
+body {
 }
