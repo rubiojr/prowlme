@@ -28,7 +28,7 @@ end
 helpers do 
   def i18n(msg)
     lang = ProwlSMS::config['lang'] || 'en'
-    ProwlSMS::i18n_config[msg][lang] rescue msg
+    ProwlSMS::i18n_config[msg][lang] || msg
   end
 end
 
