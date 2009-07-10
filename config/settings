@@ -2,3 +2,4 @@
 lang: es
 username: username # prowl username here
 password: password # prowl password here
+apikey: "b983c0c68c5767d5c5dc2aa00477fe0614ba162c"

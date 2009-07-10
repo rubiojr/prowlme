@@ -11,11 +11,14 @@ Sinatra application to send notifications via prowl (http://prowl.weks.net)
 sinatra
 haml
 thin/mongrel
+sinatra-captcha
 
 == INSTALL:
 
 git clone git://github.com/rubiojr/prowlsms
 cd prowlsms
+
+== RUN:
 rackup -s thin
 
 == LICENSE:

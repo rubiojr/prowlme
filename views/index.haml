@@ -2,15 +2,15 @@
   = i18n("Send me a message")
 %form{:method => 'post', :action => '/send', :class => 'form'}
   %div
-    %label From:
+    %label= i18n('From')
     %br
     %input{:type => 'text', :name => 'from'}
   %div
-    %label Subject:
+    %label= i18n('Subject')
     %br
     %input{:type => 'text', :name => 'subject'}
   %div
-    %label Text:
+    %label= i18n('Text')
     %br
     %textarea{:name => 'text', :rows => 8, :cols => 40}
   %div

@@ -1,7 +1,15 @@
 ---
 "Send me a message":
-  en: "Send me a message"
   es: "Envíame un mensaje"
 "Type the text above":
   es: "Escribe el texto que aparece arriba"
-  en: "Type the text above"
+'From':
+  es: Remitente
+'Text':
+  es: Texto
+'Subject':
+  es: Asunto
+'Send another message':
+  es: 'Enviar otro mensage'
+'sent!':
+  es: "enviado!"

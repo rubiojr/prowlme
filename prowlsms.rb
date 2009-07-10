@@ -1,3 +1,4 @@
+$: << File.join(File.dirname(__FILE__), 'lib')
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/captcha'
@@ -33,8 +34,8 @@ end
 
 post '/send' do
   halt(401, "Texto no válido") unless captcha_pass?
-  p = Prowler.new(config['username'], config['password'])
-  p.send_notification(params['from'] || 'unknown',params['subject'] || 'no subject', params['text'] || 'no text')
+  p = Prowl.new(config['apikey'].to_s)
+  p.send(:application => (params['from'] || 'unknown'), :event => (params['subject'] || 'no subject'), :description => (params['text'] || 'no text'))
   haml :sent
 end
 
