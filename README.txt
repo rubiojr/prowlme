@@ -1,6 +1,6 @@
-= prowlsms
+= ProwlMe 
 
-* http://github.com/rubiojr/prowlsms
+* http://github.com/rubiojr/prowlme
 
 == DESCRIPTION:
 
@@ -15,8 +15,8 @@ sinatra-captcha
 
 == INSTALL:
 
-* git clone git://github.com/rubiojr/prowlsms
-* cd prowlsms
+* git clone git://github.com/rubiojr/prowlme
+* cd prowlme
 * edit config/settings and change apikey and lang to suit your needs
   Available languages ATM:
   - English (en)

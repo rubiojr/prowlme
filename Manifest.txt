@@ -13,7 +13,7 @@ blah/test/test_blah.rb
 config
 config.ru
 prowl.rb
-prowlsms.rb
+prowlme.rb
 public/css/main.css
 sync.sh
 views/index.haml
