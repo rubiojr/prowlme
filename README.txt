@@ -15,11 +15,14 @@ sinatra-captcha
 
 == INSTALL:
 
-git clone git://github.com/rubiojr/prowlsms
-cd prowlsms
-
-== RUN:
-rackup -s thin
+* git clone git://github.com/rubiojr/prowlsms
+* cd prowlsms
+* edit config/settings and change apikey and lang to suit your needs
+  Available languages ATM:
+  - English (en)
+  - Spanish (es)
+* run the app:
+  rackup -s thin
 
 == LICENSE:
 
